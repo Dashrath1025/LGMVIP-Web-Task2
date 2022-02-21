@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Ubuntu:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.trh{
+  font-size: 25px !important;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.cards{
+  display: inline-block;
   align-items: center;
+  padding: 0;  
+  width: 20%;
+  align-items: center;
+  border-radius: 5px 40px;
+  border: 2px solid coral;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: 50px 90px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.cards>img{
+  margin: 0;
+  height: 300px;
+  width: 100%;
+  border-radius: 5px 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cards:hover{
+  transform: scale(1.05);
+  transition-duration: 1s;
+  box-shadow: 0 4px 8px 0 rgba(8, 8, 8, 0.2), 0 6px 20px 0 rgba(19, 15, 15, 0.19);
+}
+
+.dis>*{
+  display: inline;
+}
+
+.dis>h3{
+  margin-left: 10px;
+}
+
+.dis h5{
+  margin-left: 20px;
+  font-family: 'Bree Serif', serif;
+}
+.tr{
+  margin-left: 23px !important;
+}
+
+.dis p{
+  font-size: 17px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 800;
+}
+
+#view{
+  margin-top: 15px;
+  margin-left: 35px;
+  padding: 0 10px;
+  border-radius: 5px;
+  background-color: rgb(76, 182, 76);
+  margin-bottom: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#contact{
+  margin-left: 35px;
+  padding: 0 10px;
+  border-radius: 5px;
+  background-color: rgb(76, 182, 76);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#view:hover{
+  background-color: #FFC0C7;
+}
+
+#contact:hover{
+  background-color: #FFC0C7;
+
+}
+
+.btn{
+  border: 2px solid coral;
+  background-color: #FFC0C7;
+  margin-right: 35px;
+  font-size: 20px;
+  padding: 0 10px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+}
+
+.btn:hover{
+  background-color: cyan;
 }
